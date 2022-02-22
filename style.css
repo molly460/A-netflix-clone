@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 body{
     margin: 0;
-    background-color:black;
-    font-family:Roboto ;
+    background-color: black;
+    
 }
 .section-header{
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c16cf196-e89e-4c46-8cc7-f2eca6fb0762/b088b2a8-692f-4938-89fa-f107f2497954/CM-en-20220103-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
@@ -37,12 +38,36 @@ body{
     right: 10px;   
 }
 
+
+.btn-3{
+	padding: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 150px;
+    font-size: 17px;	
+}
+
+
+.btn-2{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 120px;
+    font-size: 15px;
+	border-radius: 3px;
+	
+    
+}
+
 .text-center{
     text-align: center;
 }
 h1{
     color: white;
     font-size: 40px;
+	
 }
 p{
     font-size: 22px;
@@ -53,7 +78,7 @@ p{
 }
 
 .image{
-    width: 150px;
+    width: 130px;
     filter: brightness(150%);
 }
 
@@ -68,26 +93,6 @@ input{
 
    
 }
-.sign-in-btn{
-    padding:15px;
-    background-color: red;
-    color: white;
-    border: none;
-    width: 120px;
-    font-size: 17px;
-    cursor: pointer;
-    
-}
-.btn-2{
-   padding: 15px;
-    background-color: red;
-    color: white;
-    border:none;
-    width: 200px;
-    font-size: 17px;
-   
-}
-
 .section-main{
     background-color:black;
     border-bottom: 8px solid #222;
@@ -98,15 +103,15 @@ input{
 .split{
     display: flex;
     flex-direction: row;
-  
 }
 
 img{
     max-width: 100%;
     display: block;
     width: 700px;
- 
 }
+
+
 
 /* input container*/
 
@@ -246,6 +251,28 @@ img{
 
   }
   
-  
 
- 
+  @media  screen and (max-width:600px) {
+	.split{
+		flex-direction: column;
+	}
+	
+	img{
+		align-items: center;
+		width: 700px;
+		max-width: 100%;
+	}
+
+	.btn-3{
+	margin-left: 100px;
+
+	}
+
+	input{
+		width: 300px;
+	}
+	h1,
+	p{
+		text-align: center;
+	}
+}
